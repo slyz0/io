@@ -29,10 +29,11 @@ a{
   src: url('Dosis-VariableFont_wght.ttf');
 }
 
-.0{
+.div0{
 
 }
 
-.1{
+.div1{
 font-family: onefont;
+margin: 30px 0 30px 0;
 }
