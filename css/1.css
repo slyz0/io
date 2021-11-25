@@ -25,8 +25,8 @@ a{
 }
 
 @font-face {
-  font-family: 'onefont';
-  src: url('Dosis-VariableFont_wght.ttf');
+  font-family: onefont;
+  src: url('Dosis-VariableFont_wght.ttf') format('truetype');
 }
 
 .div0{
@@ -34,6 +34,6 @@ a{
 }
 
 .div1{
-font-family: 'onefont';
+font-family: onefont;
 margin: 30px 0 30px 0;
 }
