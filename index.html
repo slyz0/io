@@ -3,7 +3,7 @@
 <head>
 <style>
 		body {
-			background-image: url("./foto/main-page.jpg");
+			background-image:url(./foto/2.jpg);
 		    background-attachment: fixed;
 		    background-position: center;
 			weight: 100%;
@@ -67,11 +67,11 @@
 div.absolute {
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 200px;
 	bottom:8px;
 }
 		
-	}
+	
 	</style>
 <meta charset="UTF-8">
 <title>sleepy zhao</title>
@@ -81,25 +81,29 @@ document.getElementsByTagName('iframe')[0].src += "&autoplay=1&loop=1";
 </script>
 </head>
 
-<body>
+<body id="demo">
 <div > 
   <!-- Navigation -->
   <header> 
     <p>sleepy zhao</p>
     <nav>
       <ul>
-        <li><a href="https://www.last.fm/user/sleepyzhao" class="c1olor">Last.FM</a></li>
-        <li><a href="https://unsplash.com/@sleepyzhao">Unsplash</a></li>
+	     <li><a href="https://unsplash.com/@sleepyzhao" class="c1olor">Unsplash</a></li>
+        <li><a href="https://www.last.fm/user/sleepyzhao" >Last.FM</a></li>
         <li> <a href="https://www.paypal.com/paypalme/poorzhao">Paypal</a></li>
       </ul>
     </nav>
   </header>
 </div>
-	
 		<center>
 	<div class="absolute">
-<iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/5VuIMfZ4PBFxF6TvmwOrcx?utm_source=generator" width="40%" height="102" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/5VuIMfZ4PBFxF6TvmwOrcx?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 	</div></center>
+	<script>	 
+		let x;
+		x=Math.floor(Math.random() * 10);
+	    document.getElementById("demo").style.background-image='url(./foto/1.jpg)';
+</script>
 </body>
 </html>
 
