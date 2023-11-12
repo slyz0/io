@@ -2,17 +2,46 @@
 <html>
 <head>
 <style>
-		body {
-	        background-image:url("./foto/6.jpg");
-		    background-attachment: fixed;
-		    background-position: center;
-			weight: 100%;
-			-webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-			 background-size: cover;
-				
+	.ct {
+		width: 100%;
+					 background-size: cover;
+  animation-name: bg-slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+		overflow: hidden;
 }
+	
+	@keyframes bg-slide {
+  0% {
+    background-image: url("./foto/1.jpg");
+  }
+		
+  12.5% {
+    background-image: url("./foto/2.jpg");
+  }
+  25% {
+    background-image: url("./foto/3.jpg");
+  }
+  37.5% {
+    background-image: url("./foto/4.jpg");
+	}
+  50% {
+    background-image: url("./foto/1.jpg");
+	}
+  62.5% {
+    background-image: url("./foto/2.jpg");
+	}
+  75% {
+    background-image: url("./foto/3.jpg");
+  }
+ 87.5%{
+    background-image: url("./foto/4.jpg");
+  }
+  100% {
+    background-image: url("./foto/1.jpg");
+  }
+}
+
 	
 	header {
 	width: 100%;
@@ -47,6 +76,7 @@
 		text-decoration: none
 	}
 	
+	
 @font-face {
   font-family: myFirstFont;
   src: url(./font/3.otf);
@@ -67,10 +97,9 @@
 div.absolute {
   position: absolute;
   width: 100%;
-  height: 200px;
+ 
 	bottom:8px;
-}
-		
+
 	
 	</style>
 <meta charset="UTF-8">
@@ -80,7 +109,7 @@ div.absolute {
 document.getElementsByTagName('iframe')[0].src += "&autoplay=1&loop=1";
 </script>
 </head>
-<body id="demo">
+<body class="ct">
 <div > 
   <!-- Navigation -->
   <header> 
@@ -96,13 +125,12 @@ document.getElementsByTagName('iframe')[0].src += "&autoplay=1&loop=1";
 </div>
 		<center>
 	<div class="absolute">
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Gk6EWHkyz8EPy4certBUs?utm_source=generator" width="40%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	</div></center>
-	<script>
-		let x=Math.floor(Math.random()*4);
 
-	   document.getElementById("demo").style.backgroundImage = "url('./foto/"+x+".jpg')";  
-	</script>
-</body>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Gk6EWHkyz8EPy4certBUs?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</center>
+	</body>
+	
+
 </html>
+
 

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<style>
+		body {
+	        background-image:url("./foto/6.jpg");
+		    background-attachment: fixed;
+		    background-position: center;
+			weight: 100%;
+			-webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+			 background-size: cover;
+				
+}
+	
+	header {
+	width: 100%;
+		height:5%;}
+	
+	p {
+	width: 20%;
+	float: left;
+    font-weight: bold;
+	font-size: 30px;
+	margin-left: 25px;
+	font-family:myFirstFont;
+	color: rgb(69,57,45);
+	}
+	
+	nav{
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+	margin-top: 20px;
+	}
+	
+	ul li { display: inline; 
+	     float: right}
+	
+	ul li a{
+		padding-right: 30px;
+		font-family:mySecondFont;
+		font-size: 15px;
+		color: rgb(69,57,45);
+		text-decoration: none
+	}
+	
+@font-face {
+  font-family: myFirstFont;
+  src: url(./font/3.otf);
+}
+	
+	@font-face {
+  font-family: mySecondFont;
+  src: url(./font/5.ttf);}
+		
+	.c1olor{
+    background-image:linear-gradient(to right, rgb(170,190,388), rgb(236,79,61));	
+	-webkit-background-clip:text;
+    -moz-background-clip:text;
+	-ms-background-clip:text;
+	color:transparent;
+	}
+
+div.absolute {
+  position: absolute;
+  width: 100%;
+ 
+	bottom:8px;
+}
+		
+	
+	</style>
+<meta charset="UTF-8">
+<title>sleepy zhao</title>
+	
+<script>
+document.getElementsByTagName('iframe')[0].src += "&autoplay=1&loop=1";
+</script>
+</head>
+<body id="demo">
+<div > 
+  <!-- Navigation -->
+  <header> 
+    <p>sleepy zhao</p>
+    <nav>
+      <ul>
+	     <li><a href="https://unsplash.com/@sleepyzhao" class="c1olor">Unsplash</a></li>
+        <li><a href="https://www.last.fm/user/sleepyzhao" >Last.FM</a></li>
+        <li> <a href="https://www.paypal.com/paypalme/poorzhao">Paypal</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+		<center>
+	<div class="absolute">
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Gk6EWHkyz8EPy4certBUs?utm_source=generator&theme=0" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</center>
+	</body>
+	<script>
+		let x=Math.floor(Math.random()*4);
+
+	   document.getElementById("demo").style.backgroundImage = "url('./foto/"+x+".jpg')";  
+	</script>
+
+</html>
+
+
